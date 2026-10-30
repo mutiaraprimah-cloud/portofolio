@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Mahasiswa</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+      <h2 class="logo">Portofolio Saya</h2>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#skill">Skill</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+      <button id="darkMode">🌙 Mode</button>
+    </nav>
+
+    <!-- HOME -->
+    <section id="home" class="home">
+      <img src="images/prima.jpeg" alt="Foto profil" width="300" height="300" />
+
+      <h1>Halo, Saya <span>Mutiara Prima Hapsari</span></h1>
+      <p>Mahasiswa Program Studi Bisnis Digital</p>
+      <p>NIM: 40425064</p>
+    </section>
+
+    <!-- TENTANG -->
+    <section id="tentang">
+      <h2>Tentang Saya</h2>
+      <p>
+        Saya adalah mahasiswa Bisnis Digital yang tertarik pada teknologi,
+        editing video, dan desain kreatif. Saya memiliki usaha keluarga sendiri,
+        yaitu bisnis kebab. Selain itu, saya juga seorang konten kreator game
+        kecil kecilan yang hanya fokus mengedit video singkat mengenai game
+        tersebut lalu mengunggahnya di Media Sosial.
+      </p>
+
+      <h3>Riwayat Pendidikan</h3>
+      <table>
+        <tr>
+          <th>Tahun</th>
+          <th>Pendidikan</th>
+        </tr>
+        <tr>
+          <td>2013-2019</td>
+          <td>SD Negeri Kandeman 01</td>
+        </tr>
+        <tr>
+          <td>2019-2022</td>
+          <td>MTs Darul Amanah</td>
+        </tr>
+        <tr>
+          <td>2022-2025</td>
+          <td>MA Darul Amanah</td>
+        </tr>
+        <tr>
+          <td>2025-Sekarang</td>
+          <td>UIN K.H. Abdurrahman Wahid Pekalongan</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- SKILL -->
+    <section id="skill">
+      <h2>Skill Saya</h2>
+
+      <div class="project-container">
+        <div class="project-card">
+          <h3>Video Editing</h3>
+          <p>Mengedit video agar lebih menarik dan enak ditonton.</p>
+        </div>
+
+        <div class="project-card">
+          <h3>Transition & Effects</h3>
+          <p>Menambahkan transisi dan efek untuk mempercantik video.</p>
+        </div>
+
+        <div class="project-card">
+          <h3>Audio Editing</h3>
+          <p>Menyesuaikan musik dan suara agar sesuai dengan video.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECT -->
+    <section id="project">
+      <h2>Project Saya</h2>
+
+      <div class="project-container">
+        <div class="project-card">
+          <h3>Editing Video</h3>
+          <p>
+            Project editing video dengan perpaduan musik, transisi, dan warna
+            yang menarik.
+          </p>
+          <a
+            href="https://www.tiktok.com/@rrayyie/video/7658113642218392853?is_from_webapp=1&sender_device=pc&web_id=7686893736026277392"
+            target="_blank"
+          >
+            Lihat Video
+          </a>
+        </div>
+
+        <div class="project-card">
+          <h3>Beat Sync Edit</h3>
+          <p>
+            Video editing dengan menyesuaikan potongan klip mengikuti irama
+            musik.
+          </p>
+          <a
+            href="https://www.tiktok.com/@rrayyie/video/7589834499203075336?is_from_webapp=1&sender_device=pc&web_id=7686893736026277392"
+            target="_blank"
+          >
+            Lihat Video
+          </a>
+        </div>
+
+        <div class="project-card">
+          <h3>Social Media Content</h3>
+          <p>Membuat dan mengedit video pendek untuk konten media sosial.</p>
+          <a
+            href="https://www.tiktok.com/@rrayyie/video/7653750201580145940?is_from_webapp=1&sender_device=pc&web_id=7686893736026277392"
+          >
+            Lihat Video
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAK -->
+    <section id="kontak">
+      <h2>Hubungi Saya</h2>
+
+      <form id="formKontak">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" placeholder="Masukkan nama" />
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" placeholder="Masukkan email" />
+
+        <label for="pesan">Pesan:</label>
+        <textarea id="pesan" rows="5" placeholder="Tulis pesan kamu"></textarea>
+
+        <button type="submit">Kirim</button>
+      </form>
+
+      <p id="hasil"></p>
+      <div id="dataTerkirim"></div>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Portfolio Mahasiswa</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
